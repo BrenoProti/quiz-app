@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="home-screen box">
+            <h2>Instruções</h2>
+            <p>Disciplina: Grafos</p>
+            <p>Tempo Limite: Indeterminado</p>
+            <p>Número de questões: <span class="total-questions"></span></p>
+            <button type="button" class='start-btn btn'>Começar Simulado</button>
+        </div>
+        <div class="quiz-screen box hide"> 
+            <div class="current-question">  
+            </div>
+            <div class="text-question">
+            </div>
+            <div class="options-question">
+            </div>
+            <div class="next-question">
+                <button type="button" class='next-btn btn' onclick="nextQuestion()">Próximo</button>
+            </div>
+            <div class="answers-questions">
+            </div>
+            <div class="info-quesion"> 
+            </div>
+             
+        </div>
+    
+        <div class="result-screen box hide">
+            <h1>Resultado</h1>
+            <table>
+                <tr>
+                    <td>Total de Questões</td>
+                    <td><span class="total-questions"></span></td>
+                </tr>
+                <tr>
+                    <td>Questóes Feitas</td>
+                    <td><span class="total-attempt"></span></td>
+                </tr>
+                <tr>
+                    <td>Questões em Branco</td>
+                    <td><span class="total-empty"></span></td>
+                </tr>
+                <tr>
+                    <td>Acertos</td>
+                    <td><span class="total-correct"></span></td>
+                </tr>
+                <tr>
+                    <td>Erros</td>
+                    <td><span class="total-wrong"></span></td>
+                </tr>
+                <tr>
+                    <td>Aproveitamento</td>
+                    <td><span class="correct-percent"></span></td>
+                </tr>
+                <tr>
+                    <td>Potuação total</td>
+                    <td><span class="total-score"></span></td>
+                </tr>
+            </table>
+            <button type="button" class="try-again-btn btn">Tentar de novo</button>
+            <button type="button" class="home-btn btn">Voltar ao inicio</button>
+        </div>
+    </div>
+   
+    <script src="./js/questions.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

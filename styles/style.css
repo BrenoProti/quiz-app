@@ -1,0 +1,233 @@
+:root {
+    font-size: 62.5%;
+  }
+
+  html {
+    min-height: 100%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(48, 38, 105),rgba(95, 8, 216, 0.932)) no-repeat;
+    color: #34324b;
+  }
+
+  .app-container {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+  }
+
+  .box::before, .box::after {
+      content: '';
+      clear: both;
+      display: table;
+  }
+
+  .box.hide {
+      display: none;
+  }
+
+  .box {
+      max-width: 750px;
+      background: #fff;
+      padding: 3rem;
+      border-radius: 1rem;
+      display: block;
+      margin-bottom: 100px;
+
+  }
+
+  .home-screen h2 {
+      font-size: 2.4rem;
+      line-height: 2.5rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .home-screen p {
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      margin-bottom: 1rem;
+  }
+
+  .home-screen .total-questions {
+    font-weight: bold;
+    color: blueviolet;
+  }
+
+  .home-screen .btn {
+    margin-top: 2rem;
+  }
+ 
+  .btn {
+      padding: 1.5rem 4.5rem;
+      background-color: rgba(86, 7, 197, 0.897);
+      color: #fff;
+      border: none;
+      border-radius: .5rem;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.6rem;
+  }
+
+  .img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+    opacity: 0;
+    animation-delay: 1000ms;
+    overflow-x: hidden;
+    animation: fadeIn 300ms ease forwards;
+  }
+
+  .quiz-screen .current-question,
+  .quiz-screen .text-question,
+  .quiz-screen .options-question,
+  .quiz-screen .next-question,
+  .quiz-screen .answers-questions {
+    float: left;
+    width: 100%;
+  }
+
+  .quiz-screen .current-question{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgba(86, 7, 197, 0.897);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    line-height: 2.5rem;
+  }
+
+  .quiz-screen .text-question{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    padding: 15px 0;
+    margin: 0;
+
+  }
+
+  .quiz-screen .options-question .option {
+      background-color: #a5a3c4;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      padding: 8px 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      opacity: 0;
+      transition: background-color 200ms;
+      animation: fadeIn 200ms ease-in forwards;
+  }
+
+  .quiz-screen .options-question .option.correct {
+    background-color: #a9ecb7;
+  }
+
+  .quiz-screen .options-question .option.correct:hover {
+    background-color: #89eb9f;
+  }
+
+  .quiz-screen .options-question .option.wrong {
+    background-color: #e99bb2;
+  }
+
+  .quiz-screen .options-question .option.wrong:hover {
+    background-color: #ee83a3;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes swipeRigth {
+    0% {
+      opacity: 0;
+      transform: translateX(-60%)
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  
+
+  .quiz-screen .options-question .option:hover {
+    background-color: #c2a9f0;
+  }
+
+  
+  .quiz-screen .next-btn {
+      margin: 15px 0;
+  }
+
+  .quiz-screen .answers-questions {
+      border-top: 1px solid #ccc;
+      
+  }
+
+  .quiz-screen .answers-questions .correct {
+    background-color: #a9ecb7;
+    transition: background-color 300ms ease-out;
+  }
+
+  .quiz-screen .answers-questions .wrong {
+    background-color: #ee83a3;
+    transition: background-color 300ms ease-out;
+  }
+
+  .quiz-screen .answers-questions div{
+    margin-top: 15px;
+    height: 3.1rem;
+    width: 3.1rem;
+    display: inline-block;
+    background-color: #a5a3c4;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-bottom: 15px;
+  }
+
+  .result-screen {
+      text-align: center;
+  }
+
+  .result-screen h1 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      line-height: 4.2rem;
+      color: rgba(86, 7, 197, 0.897);
+  }
+
+  .result-screen table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+  }
+
+  .result-screen table td{
+      border: 1px solid #ccc;
+      padding: 8px 15px;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      font-weight: 500;
+      width: 50%; 
+      text-align: left;
+  }
+
+  .result-screen .btn {
+    margin-right: 2rem;
+  }
