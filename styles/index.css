@@ -1,0 +1,101 @@
+:root {
+    font-size: 62.5%;
+  }
+
+  html {
+    min-height: 100%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  .btn {
+      padding: 1rem 3rem;
+      border: none;
+      outline: none;
+      background-color: blueviolet;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: .7rem;
+  }
+
+  .menu { 
+      display: flex;
+      align-items: center;
+      height: 80px;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+  }
+
+  .menu h1 {
+      flex: 1;
+      font-size: 2.8rem;
+      padding: 0 1rem;
+      padding-left: 4rem;
+      color: blueviolet;
+  }
+
+  .menu ul {
+      flex: 2;
+      display: flex;
+  }
+
+  .menu ul li {
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 1.6rem;
+      transition: color 300ms ease;
+      cursor: pointer;
+  }
+
+  .menu ul li:hover {
+      color: blueviolet;
+  }
+
+  main {
+      display: flex;
+  }
+
+  .info-side {
+      width: 35%;
+  }
+
+  .info-side h2 {
+      padding: 1rem;
+      margin-left: 3rem;
+      font-size: 5.5rem;
+      color: blueviolet;
+  }
+
+  .info-side button {
+      display: inline-block;
+      margin-left: 4rem;
+      width: 100%;
+      height: 5rem;
+      font-size: 2rem;
+      margin-bottom: 5rem;
+  }
+
+  .hero-side {
+      width: 75%;
+      padding: 5rem;
+      display: flex;
+      align-items: center;
+  }
+
+  .hero-side img {
+      width: 60rem;
+      margin-left: 10rem;
+  }
+  
+
